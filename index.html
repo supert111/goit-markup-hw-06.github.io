@@ -57,6 +57,42 @@
                       <use href="./images/sprite.svg#vectorx"></use>
                     </svg>  
                   </button>
+                  <form class="modal-form" action="./index.html" method="POST">
+                    <h1 class="title-modal-form">Оставьте свои данные, мы вам перезвоним</h1>
+                      <label class="name-label" for="form-user-name">Имя</label>
+                    <div class="form-item">
+                        <svg class="icon-form-size">
+                          <use href="./images/sprite.svg#person-black-18dp-1"></use>
+                        </svg> 
+                      <input id="form-user-name" type="text" name="user-name" class="form-input">
+                    </div>
+                      <label class="name-label" for="form-user-tel">Телефон</label>
+                    <div class="form-item">
+                        <svg class="icon-form-size">
+                          <use href="./images/sprite.svg#phone-black-18dp-1"></use>
+                        </svg>
+                      <input id="form-user-tel" type="tel" name="user-tel" class="form-input">                
+                    </div>
+                      <label class="name-label" for="form-user-mail">Почта</label>
+                    <div class="form-item">
+                        <svg class="icon-form-size">
+                          <use href="./images/sprite.svg#email-black-18dp-1"></use>
+                        </svg>
+                      <input id="form-user-mail" type="email" name="user-mail" class="form-input">
+                    </div>
+                      <label class="name-label" for="form-user-message">Комментарий</label>
+                      <textarea name="user-message" id="form-user-message" class="form-input-message" placeholder="Введите текст"></textarea>
+                  
+                    <div class="form-privacy-policy">
+
+                      <label class="form-checkbox-label">
+                        <input class="form-modal-checkbox" type="checkbox" name="checkbox-use">
+                        <span class="check-box"></span>
+                        Соглашаюсь с рассылкой и принимаю <a class="form-privacy-link link" href="">Условия договора</a>
+                      </label>
+                    </div>
+                    <button class="button primary" type="submit">Отправить</button>
+                  </form>
               </div>
             </div>
         </div>
@@ -388,9 +424,20 @@
                 </svg> 
               </a>
             </li>
-
           </ul>
         </div>
+        <form class="footer-form" action="./index.html" method="POST">
+          <p class="title-footer-form">Подпишитесь на рассылку</p>
+          <input class="email-form-input" type="email" name="mail" placeholder="E-mail">
+          <div class="wrapper-button">
+           <button class="button primary" type="submit">Подписаться
+            <svg class="icon-footer-button" style="width:24px; height:24px">
+              <use href="./images/sprite.svg#icon-send"></use>
+            </svg>
+           </button>
+           
+          </div>
+        </form>
       </footer>
     </div>
     <script src="./js/modal.js"></script>
