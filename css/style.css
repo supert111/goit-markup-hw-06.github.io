@@ -571,9 +571,10 @@ margin: 0px auto 50px;
   border-radius: 4px;
   background: var(--background-color);
   margin: 0px 12px 0px 0px;
+  padding: 15px 16px;
+  color: var(--secondary-text-color);
 }
-.email-form-input::placeholder{
-  padding-left: 16px;
+.email-form-input::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.25;
@@ -769,6 +770,7 @@ margin: 0px auto 50px;
   width: 100%;
   padding-left: 42px;
   cursor: pointer;
+  height: 40px;
 }
 .form-privacy-policy {
   align-content: center;
@@ -786,7 +788,7 @@ margin: 0px auto 50px;
   margin-left: 12px;
 }
 .form-item:hover .icon-form-size,
-.form-item:focus .icon-form-size {
+.form-item:focus-within .icon-form-size {
 fill: var(--accent-color);
 transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
